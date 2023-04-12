@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: meupod
+  label: azul
+spec:
+  containers: 
+  - name: conversaodetemperatura
+    image: ra1z3nbr/conversao-temperatura
+
+    ports:
+    - containerPort: 8080
+---
